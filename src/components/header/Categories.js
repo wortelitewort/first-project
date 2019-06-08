@@ -8,26 +8,28 @@ class Categories extends Component {
   }
 
   handleClick = () => {
-    this.setState({ activeId: this.state.activeId + 1 });
+    this.setState({ activeId: 1 });
   };
 
   render() {
     return (
       <div className="ui centered grid" onClick={this.handleClick}>
-        {/* <div className="center aligned column">
+        <div className="center aligned column">
           <div className="ui compact menu">
             <Link id="1" to="/" className="item">
-              Home
+              Living room
             </Link>
             <Link id="2" to="/contents" className="item">
-              Contents
+              Bedroom
             </Link>
             <Link id="3" to="/" className="item">
-              Also home
+              Office
+            </Link>
+            <Link id="3" to="/" className="item">
+              Outdoor and Picnic
             </Link>
           </div>
-        </div> */}
-        <h3>Click me: {this.state.activeId}</h3>
+        </div>
       </div>
     );
   }
